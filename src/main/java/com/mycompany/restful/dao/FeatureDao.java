@@ -10,7 +10,6 @@ import com.mycompany.restful.model.RequestParams;
 import com.mycompany.restful.util.HibernateUtil;
 import java.util.List;
 import org.hibernate.Criteria;
-import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Criterion;
@@ -59,7 +58,7 @@ public class FeatureDao {
       session.beginTransaction();
       Features = session.createCriteria(Feature.class);
      
-      if (!"".equals(param.getValue())) {
+      if (!"".equals(param.getValue()) && param.getValue() != null) {
         Criterion rest1 = Restrictions.like("renderingEngine","%" +  param.getValue() + "%"); 
         Criterion rest2 = Restrictions.like("browser", "%" + param.getValue() + "%");
         Criterion rest3 = Restrictions.like("platform", "%" + param.getValue() + "%");
@@ -68,7 +67,7 @@ public class FeatureDao {
        
         Features.add(Restrictions.or(rest1, rest2, rest3, rest4, rest5));
       }
-      if (!"".equals(param.getColumn())) {
+      if (!"".equals(param.getColumn()) && param.getColumn() != null) {
         if ("asc".equals(param.getDir())) {
           Features.addOrder(Order.asc(param.getColumn()));
         } else {
