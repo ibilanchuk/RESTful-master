@@ -22,10 +22,10 @@ $.fn.dataTable.pipeline = function ( opts ){
 
     return function ( request, drawCallback, settings ) {
       var ajax          = false;
-       var requestStart  = request.start;
+      var requestStart  = request.start;
       var drawStart     = request.start;
-        var requestLength = request.length;
-        var requestEnd    = requestStart + requestLength;
+      var requestLength = request.length;
+      var requestEnd    = requestStart + requestLength;
  
       if ( ajax ) {
             // Need data from the server
@@ -82,7 +82,7 @@ table = $("#feature_table").DataTable({
         }),
         "columns": [
             
-            //{"data": "id", 'id':'id', "title":'ID'},
+            {"data": "id", 'id':'id', "title":'ID'},
             {"data": "renderingEngine", "title":"Rendering Engine"},
             {"data": "browser", "title":"Browser"},
             {"data": "platform", "title":"Platform"},
@@ -187,9 +187,6 @@ table = $("#feature_table").DataTable({
   $('#reload').click(function(){
     table.clearPipeline().draw();
 });
-
-    
-
 });
 
 

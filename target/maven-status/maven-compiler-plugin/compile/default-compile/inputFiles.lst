@@ -1,6 +1,6 @@
 C:\Users\ibilanchuk\Desktop\RESTful-master\src\main\java\com\mycompany\restful\model\RequestParams.java
+C:\Users\ibilanchuk\Desktop\RESTful-master\src\main\java\com\mycompany\restful\model\Feature.java
 C:\Users\ibilanchuk\Desktop\RESTful-master\src\main\java\com\mycompany\restful\config\ApplicationConfig.java
 C:\Users\ibilanchuk\Desktop\RESTful-master\src\main\java\com\mycompany\restful\Service\Service.java
 C:\Users\ibilanchuk\Desktop\RESTful-master\src\main\java\com\mycompany\restful\util\HibernateUtil.java
-C:\Users\ibilanchuk\Desktop\RESTful-master\src\main\java\com\mycompany\restful\model\Features.java
-C:\Users\ibilanchuk\Desktop\RESTful-master\src\main\java\com\mycompany\restful\dao\FeaturesDao.java
+C:\Users\ibilanchuk\Desktop\RESTful-master\src\main\java\com\mycompany\restful\dao\FeatureDao.java
